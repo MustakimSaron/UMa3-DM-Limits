@@ -24,6 +24,14 @@ This project includes:
 3. **Spectral Modeling:** Parametric yield calculations for hadronic dark matter annihilation ($\chi\chi \to b\bar{b}$).
 4. **Cross-Section Limit Engine:** Numerical derivation of 95% C.L. upper bounds on velocity-averaged cross-sections ($\langle \sigma v \rangle$) across $m_\chi \in [5, 1000]\text{ GeV}$.
 
+### 🛠️ Key Technical & Computational Highlights
+
+* **Target Verification & Coordinates:** Mapped RA/Dec and Galactic coordinates ($b = +73.68^\circ$) for Ursa Major III / UNIONS 1 using `astropy`.
+* **Automated Catalog Querying:** Queried NASA's HEASARC 4FGL-DR4 database via `astroquery` to verify a clear $3.0^\circ$ Region of Interest (ROI) with no background point sources.
+* **WIMP Gamma-Ray Spectral Integration:** Parameterized and calculated differential photon energy spectra ($E^2 \, dN_\gamma/dE$) for hadronic annihilation channels ($\chi\chi \to b\bar{b}$) across dark matter masses $m_\chi \in [5, 1000]\text{ GeV}$.
+* **Cross-Section Limit Engine:** Automated derivation of 95% C.L. upper bounds ($\langle \sigma v \rangle$) using numerical trapezoidal integration (`scipy.integrate.trapezoid`) against astrophysical J-factor inputs ($J = 10^{20.5}\text{ GeV}^2\text{ cm}^{-5}$).
+* **Publication Visualizations:** Generated publication-ready figures formatted for double-column scientific layout using `matplotlib`.
+
 ---
 
 ## 🛠️ Installation & Setup
