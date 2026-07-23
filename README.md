@@ -1,38 +1,36 @@
 # Dark Matter Annihilation Constraints in Ursa Major III / UNIONS 1
 
-This repository contains the Python analysis pipeline accompanying the paper:
+This repository contains the Python analysis pipeline accompanying the manuscript:  
 **"Constraining WIMP Dark Matter Annihilation in the Ultra-Faint Milky Way Satellite Ursa Major III / UNIONS 1 with Fermi-LAT Observations"**
 
 **Author:** Md Mustakim Bin Alam (Novosibirsk State University)  
-**Contact:** m.alam1@g.nsu.ru  
+**Email:** m.alam1@g.nsu.ru  
 
 ---
 
 ## 🚀 Run in Google Colab
 
-Click the badge below to run the analysis directly in your browser:
+Click the badge below to open and run the notebook directly in your browser:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR-GITHUB-USERNAME/UMa3-DM-Limits/blob/main/UMa3_DM_Limits.ipynb)
-
-*(Note: Replace `YOUR-GITHUB-USERNAME` in the link above with your actual GitHub username).*
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MustakimSaron/UMa3-DM-Limits/blob/main/UMa3_DM_Limits.ipynb)
 
 ---
 
 ## 📌 Repository Overview
 
-This code performs:
-1. Astronomical coordinate conversion and target isolation for Ursa Major III ($b = +73.68^\circ$).
-2. Automated region-of-interest query using NASA HEASARC 4FGL-DR4 Fermi-LAT catalogs.
-3. Parametric modeling of prompt WIMP dark matter annihilation spectra ($\chi\chi \to b\bar{b}$).
-4. Derivation of 95% C.L. velocity-averaged cross-section upper limits ($\langle \sigma v \rangle$) across $m_\chi \in [5, 1000]$ GeV.
+This project includes:
+1. **Target Mapping:** Astronomical coordinate conversion and Galactic latitude isolation ($b = +73.68^\circ$) for Ursa Major III / UNIONS 1.
+2. **Background Isolation:** Automated HEASARC 4FGL-DR4 catalog query confirming a clean $3.0^\circ$ Region of Interest (ROI) with zero point-source contamination.
+3. **Spectral Modeling:** Parametric yield calculations for hadronic dark matter annihilation ($\chi\chi \to b\bar{b}$).
+4. **Cross-Section Limit Engine:** Numerical derivation of 95% C.L. upper bounds on velocity-averaged cross-sections ($\langle \sigma v \rangle$) across $m_\chi \in [5, 1000]\text{ GeV}$.
 
 ---
 
-## 🛠️ Installation & Dependencies
+## 🛠️ Installation & Setup
 
-To run locally, clone this repository and install required packages:
+To run locally:
 
 ```bash
-git clone [https://github.com/YOUR-GITHUB-USERNAME/UMa3-DM-Limits.git](https://github.com/YOUR-GITHUB-USERNAME/UMa3-DM-Limits.git)
+git clone [https://github.com/MustakimSaron/UMa3-DM-Limits.git](https://github.com/MustakimSaron/UMa3-DM-Limits.git)
 cd UMa3-DM-Limits
 pip install -r requirements.txt
